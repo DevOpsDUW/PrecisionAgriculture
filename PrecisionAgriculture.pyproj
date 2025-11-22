@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5e289eba-6f0d-43d6-ada6-f08aaaeb31b0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\data_collection\database_setup.py</StartupFile>
+    <StartupFile>src\web_app\app.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
