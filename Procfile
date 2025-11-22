@@ -1,0 +1,1 @@
+web: cd src/web_app && python app.py
