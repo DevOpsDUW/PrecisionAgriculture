@@ -20,30 +20,15 @@ class SatelliteDataService:
         self.nasa_password = os.environ.get('NASA_EARTHDATA_PASSWORD', 'demo_pass')
     
     def get_nasa_ndvi_data(self, lat, lon, field_name=None):
-        """
-        Get simulated NDVI data with realistic patterns
-        In production, this would call actual NASA HLS API
-        """
         try:
-            # Simulate realistic NDVI patterns based on season and location
             day_of_year = datetime.now().timetuple().tm_yday
-            
-            # Base seasonal pattern (higher in growing season)
             seasonal_base = 0.3 + (math.sin((day_of_year - 100) / 365 * 2 * math.pi) * 0.4)
-            
-            # Location-based variation
-            location_factor = ((lat * 100 + lon * 100) % 50) / 100  # 0-0.5 variation
-            
-            # Field-specific characteristics
+            location_factor = ((lat * 100 + lon * 100) % 50) / 100
             field_factor = hash(field_name or "default") % 30 / 100 if field_name else 0.1
-            
-            # Recent "weather" effect
             weather_effect = random.uniform(-0.1, 0.1)
             
             simulated_ndvi = seasonal_base + location_factor + field_factor + weather_effect
             simulated_ndvi = max(0.1, min(0.95, round(simulated_ndvi, 3)))
-            
-            # Simulate data quality
             quality_score = random.uniform(0.85, 0.98)
             
             return {
@@ -60,13 +45,11 @@ class SatelliteDataService:
             return self.get_fallback_ndvi_data(lat, lon)
     
     def get_historical_ndvi_trend(self, lat, lon, days=30):
-        """Generate historical NDVI trend data"""
         trends = []
         base_ndvi = 0.5 + (math.sin(datetime.now().timetuple().tm_yday / 365 * 2 * math.pi) * 0.3)
         
-        for i in range(days, 0, -7):  # Weekly data points
+        for i in range(days, 0, -7):
             date = datetime.now() - timedelta(days=i)
-            # Add some realistic fluctuation
             fluctuation = random.uniform(-0.15, 0.15)
             trend_ndvi = max(0.2, min(0.9, base_ndvi + fluctuation))
             
@@ -79,7 +62,6 @@ class SatelliteDataService:
         return trends
     
     def get_fallback_ndvi_data(self, lat, lon):
-        """Fallback NDVI data when satellite API is unavailable"""
         return {
             'ndvi': 0.65,
             'timestamp': datetime.now().isoformat(),
@@ -90,7 +72,6 @@ class SatelliteDataService:
         }
     
     def get_vegetation_health_report(self, ndvi_value):
-        """Generate comprehensive health assessment based on NDVI value"""
         if ndvi_value >= 0.7:
             return {
                 'status': 'healthy', 
@@ -130,7 +111,6 @@ class EnhancedAgricultureDashboard:
         self.satellite_service = SatelliteDataService()
     
     def get_database_path(self):
-        """Get database path that works on both local and Railway"""
         if 'RAILWAY_VOLUME_MOUNT_PATH' in os.environ:
             db_path = os.path.join(os.environ['RAILWAY_VOLUME_MOUNT_PATH'], 'agriculture.db')
         else:
@@ -141,7 +121,6 @@ class EnhancedAgricultureDashboard:
         return db_path
     
     def get_dashboard_data(self, farm_id=1):
-        """Get enhanced dashboard data with satellite integration"""
         try:
             if not os.path.exists(self.db_path):
                 return self.get_enhanced_mock_data()
@@ -164,7 +143,6 @@ class EnhancedAgricultureDashboard:
             return self.get_enhanced_mock_data()
     
     def process_enhanced_data(self, farm, fields):
-        """Process data with satellite integration"""
         dashboard_data = {
             'farm_name': farm['name'] if farm else 'Satellite-Monitored Farm',
             'analysis_date': datetime.now().strftime('%Y-%m-%d %H:%M'),
@@ -224,13 +202,11 @@ class EnhancedAgricultureDashboard:
             
             dashboard_data['fields'].append(field_data)
         
-        # Calculate enhanced summary stats
         if dashboard_data['fields']:
             dashboard_data['summary']['total_water_allocated'] = sum(f['allocated_water'] for f in dashboard_data['fields'])
             dashboard_data['summary']['high_priority_zones'] = len([f for f in dashboard_data['fields'] if f['priority_score'] > 0.7])
             dashboard_data['summary']['water_stress_count'] = len([f for f in dashboard_data['fields'] if f['allocation_sufficiency'] < 0.6])
             
-            # Enhanced satellite metrics
             dashboard_data['satellite_metrics']['average_ndvi'] = round(sum(ndvi_values) / len(ndvi_values), 3)
             dashboard_data['satellite_metrics']['health_distribution'] = health_counts
             dashboard_data['satellite_metrics']['total_coverage_km2'] = round(total_area * 0.01, 2)
@@ -239,7 +215,6 @@ class EnhancedAgricultureDashboard:
         return dashboard_data
     
     def calculate_priority_score(self, field, ndvi_value):
-        """Enhanced priority calculation using satellite data"""
         yield_factor = min(1.0, field['historical_yield'] / 8.0)
         area_factor = min(1.0, field['area_hectares'] / 200.0)
         health_factor = ndvi_value
@@ -248,7 +223,6 @@ class EnhancedAgricultureDashboard:
         return round(priority_score, 3)
     
     def get_enhanced_mock_data(self):
-        """Return comprehensive mock data with satellite integration"""
         field_coordinates = [
             (40.7128, -74.0060, "North Valley"),
             (40.7135, -74.0055, "South Slope"),
@@ -321,125 +295,50 @@ class EnhancedAgricultureDashboard:
             }
         }
 
-# Initialize the enhanced dashboard
 dashboard = EnhancedAgricultureDashboard()
 
 @app.route('/')
 def index():
-    """Serve the enhanced dashboard with satellite data visualization"""
-    # Simple HTML template - we'll keep it minimal to avoid encoding issues
-    html_content = """
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Precision Agriculture Dashboard</title>
-        <style>
-            body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f0f7f4; }
-            .container { max-width: 1200px; margin: 0 auto; }
-            .header { background: #2c3e50; color: white; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
-            .summary-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 20px; }
-            .card { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-            .satellite-status { background: #27ae60; color: white; padding: 10px; border-radius: 3px; margin: 10px 0; }
-            .field-list { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-            .field-item { border-bottom: 1px solid #eee; padding: 15px 0; }
-            .priority-high { color: #e74c3c; font-weight: bold; }
-            .priority-medium { color: #f39c12; }
-            .priority-low { color: #27ae60; }
-            .status-healthy { color: #27ae60; }
-            .status-moderate { color: #f39c12; }
-            .status-stressed { color: #e74c3c; }
-            .status-critical { color: #c0392b; }
-            .loading { color: #666; font-style: italic; }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>Precision Agriculture Dashboard</h1>
-                <p>Climate Resilience & Water Optimization with Satellite Monitoring</p>
-                <div class="satellite-status" id="satelliteStatus">
-                    Satellite Data: Active | Last Update: <span id="lastUpdate">Loading...</span>
+    # Use a separate HTML file instead of embedding it
+    html_file_path = os.path.join(os.path.dirname(__file__), 'templates', 'dashboard.html')
+    
+    if os.path.exists(html_file_path):
+        with open(html_file_path, 'r', encoding='utf-8') as f:
+            html_content = f.read()
+    else:
+        # Fallback minimal HTML
+        html_content = """
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Precision Agriculture Dashboard</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 40px; }
+                .container { max-width: 1200px; margin: 0 auto; }
+                .header { background: #2c3e50; color: white; padding: 20px; border-radius: 5px; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>Precision Agriculture Dashboard</h1>
+                    <p>Loading dashboard data...</p>
+                </div>
+                <div id="content">
+                    <p>Dashboard content will load here</p>
                 </div>
             </div>
-            
-            <div class="summary-cards" id="summaryCards">
-                <div class="card"><h3>Total Fields</h3><p id="totalFields" class="loading">Loading...</p></div>
-                <div class="card"><h3>Water Allocated</h3><p id="waterAllocated" class="loading">Loading...</p></div>
-                <div class="card"><h3>Average NDVI</h3><p id="averageNdvi" class="loading">Loading...</p></div>
-                <div class="card"><h3>High Priority</h3><p id="highPriority" class="loading">Loading...</p></div>
-            </div>
-            
-            <div class="field-list">
-                <h2>Field Analysis with Satellite Data</h2>
-                <div id="fieldList" class="loading">Loading field data...</div>
-            </div>
-        </div>
-
-        <script>
-            async function loadDashboardData() {
-                try {
-                    const response = await fetch('/api/dashboard-data');
-                    const data = await response.json();
-                    
-                    if (data.error) {
-                        document.getElementById('fieldList').innerHTML = '<p>Error: ' + data.error + '</p>';
-                        return;
-                    }
-                    
-                    // Update summary cards
-                    document.getElementById('totalFields').textContent = data.summary.total_fields;
-                    document.getElementById('totalFields').className = '';
-                    
-                    document.getElementById('waterAllocated').textContent = data.summary.total_water_allocated.toLocaleString() + ' m3';
-                    document.getElementById('waterAllocated').className = '';
-                    
-                    document.getElementById('averageNdvi').textContent = data.satellite_metrics.average_ndvi;
-                    document.getElementById('averageNdvi').className = '';
-                    
-                    document.getElementById('highPriority').textContent = data.summary.high_priority_zones;
-                    document.getElementById('highPriority').className = '';
-                    
-                    document.getElementById('lastUpdate').textContent = data.summary.last_satellite_update;
-                    
-                    // Update field list
-                    const fieldList = document.getElementById('fieldList');
-                    fieldList.innerHTML = '';
-                    fieldList.className = '';
-                    
-                    data.fields.forEach(field => {
-                        const fieldItem = document.createElement('div');
-                        fieldItem.className = 'field-item';
-                        
-                        const priorityClass = field.priority_score > 0.7 ? 'priority-high' : 
-                                            field.priority_score > 0.5 ? 'priority-medium' : 'priority-low';
-                        
-                        const statusClass = 'status-' + field.status;
-                        
-                        fieldItem.innerHTML = `
-                            <h3>${field.name} (${field.area_hectares} ha)</h3>
-                            <p><strong>Satellite Data:</strong> NDVI ${field.ndvi_value} | Source: ${field.ndvi_source} | Quality: ${(field.ndvi_quality * 100).toFixed(0)}%</p>
-                            <p>Yield: ${field.historical_yield} t/ha | Health: <span class="${statusClass}">${field.status.toUpperCase()}</span></p>
-                            <p>Priority: <span class="${priorityClass}">${field.priority_score.toFixed(3)}</span> | Risk: ${field.risk_level.toUpperCase()}</p>
-                            <p>Recommendation: ${field.recommendation}</p>
-                            <p>Water: ${field.allocated_water} m3 (${(field.allocation_sufficiency * 100).toFixed(1)}% sufficient)</p>
-                        `;
-                        
-                        fieldList.appendChild(fieldItem);
+            <script>
+                fetch('/api/dashboard-data')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('content').innerHTML = '<h2>Farm: ' + data.farm_name + '</h2><p>Fields: ' + data.summary.total_fields + '</p>';
                     });
-                    
-                } catch (error) {
-                    console.error('Error loading dashboard data:', error);
-                    document.getElementById('fieldList').innerHTML = '<p>Error loading data. Check console for details.</p>';
-                }
-            }
-            
-            document.addEventListener('DOMContentLoaded', loadDashboardData);
-        </script>
-    </body>
-    </html>
-    """
+            </script>
+        </body>
+        </html>
+        """
+    
     return render_template_string(html_content)
 
 @app.route('/api/dashboard-data')
@@ -450,7 +349,6 @@ def get_dashboard_data():
 
 @app.route('/api/satellite/field/<int:field_id>')
 def get_field_satellite_data(field_id):
-    """Get detailed satellite data for a specific field"""
     lat = 40.0 + (field_id * 0.1)
     lon = -100.0 + (field_id * 0.1)
     satellite_data = dashboard.satellite_service.get_nasa_ndvi_data(lat, lon, f"Field {field_id}")
