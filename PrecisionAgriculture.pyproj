@@ -46,6 +46,7 @@
     <Folder Include="src\visualization\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".env" />
     <Content Include=".gitignore" />
     <Content Include="docs\DEPLOYMENT.md" />
     <Content Include="docs\PROJECT_SUMMARY.md" />

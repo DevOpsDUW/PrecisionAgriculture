@@ -7,40 +7,44 @@
       "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\web_app\\app.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\runtime.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:runtime.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\web_app\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\railway.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:railway.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\visualization\\charts.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\visualization\\charts.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\wsgi.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\web_app\\wsgi.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:docs\\DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\wsgi.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\web_app\\wsgi.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\runtime.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:runtime.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\railway.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:railway.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\make_procfile.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:make_procfile.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:docs\\DEPLOYMENT.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\web_app\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\visualization\\charts.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|solutionrelative:src\\visualization\\charts.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E289EBA-6F0D-43D6-ADA6-F08AAAEB31B0}|PrecisionAgriculture.pyproj|C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\PROJECT_SUMMARY.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -78,15 +82,15 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "wsgi.py",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\wsgi.py",
-              "RelativeDocumentMoniker": "src\\web_app\\wsgi.py",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\wsgi.py",
-              "RelativeToolTip": "src\\web_app\\wsgi.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-22T05:30:32.364Z",
+              "DocumentIndex": 1,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-22T07:35:18.337Z",
               "EditorCaption": ""
             },
             {
@@ -97,87 +101,88 @@
               "RelativeDocumentMoniker": "src\\web_app\\app.py",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\app.py",
               "RelativeToolTip": "src\\web_app\\app.py",
-              "ViewState": "AgIAAKABAAAAAAAAAAAUwLsBAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-11-22T04:32:20.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "requirements.txt",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\requirements.txt",
               "RelativeDocumentMoniker": "requirements.txt",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\requirements.txt",
               "RelativeToolTip": "requirements.txt",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowBUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-11-21T22:56:06.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "requirements.txt",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\requirements.txt",
-              "RelativeDocumentMoniker": "src\\web_app\\requirements.txt",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\requirements.txt",
-              "RelativeToolTip": "src\\web_app\\requirements.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-22T04:33:57.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "charts.py",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\visualization\\charts.py",
-              "RelativeDocumentMoniker": "src\\visualization\\charts.py",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\visualization\\charts.py",
-              "RelativeToolTip": "src\\visualization\\charts.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-22T00:10:08.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "railway.json",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\railway.json",
               "RelativeDocumentMoniker": "railway.json",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\railway.json",
               "RelativeToolTip": "railway.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-22T05:13:54.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "runtime.txt",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\runtime.txt",
               "RelativeDocumentMoniker": "runtime.txt",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\runtime.txt",
               "RelativeToolTip": "runtime.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-11-22T05:25:57.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "wsgi.py",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\wsgi.py",
+              "RelativeDocumentMoniker": "src\\web_app\\wsgi.py",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\wsgi.py",
+              "RelativeToolTip": "src\\web_app\\wsgi.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-22T05:30:32.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-22T05:31:11.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DEPLOYMENT.md",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\DEPLOYMENT.md",
               "RelativeDocumentMoniker": "docs\\DEPLOYMENT.md",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\DEPLOYMENT.md",
               "RelativeToolTip": "docs\\DEPLOYMENT.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-22T05:09:54.501Z"
+              "WhenOpened": "2025-11-22T05:09:54.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -187,25 +192,38 @@
               "RelativeDocumentMoniker": "make_procfile.py",
               "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\make_procfile.py",
               "RelativeToolTip": "make_procfile.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-22T05:21:37.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAIwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-22T05:31:11.099Z"
+              "WhenOpened": "2025-11-22T05:21:37.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "charts.py",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\visualization\\charts.py",
+              "RelativeDocumentMoniker": "src\\visualization\\charts.py",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\visualization\\charts.py",
+              "RelativeToolTip": "src\\visualization\\charts.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-22T00:10:08.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\requirements.txt",
+              "RelativeDocumentMoniker": "src\\web_app\\requirements.txt",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\web_app\\requirements.txt",
+              "RelativeToolTip": "src\\web_app\\requirements.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-22T04:33:57.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PROJECT_SUMMARY.md",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\PROJECT_SUMMARY.md",
               "RelativeDocumentMoniker": "docs\\PROJECT_SUMMARY.md",
@@ -217,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\docs\\README.md",
               "RelativeDocumentMoniker": "docs\\README.md",
@@ -229,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "integrated_analyzer.py",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\analysis\\integrated_analyzer.py",
               "RelativeDocumentMoniker": "src\\analysis\\integrated_analyzer.py",
@@ -241,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "nasa_api.py",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\data_collection\\nasa_api.py",
               "RelativeDocumentMoniker": "src\\data_collection\\nasa_api.py",
@@ -253,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "database_setup.py",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\data_collection\\database_setup.py",
               "RelativeDocumentMoniker": "src\\data_collection\\database_setup.py",
@@ -265,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "agriculture_analysis.py",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\PrecisionAgriculture\\src\\data_collection\\agriculture_analysis.py",
               "RelativeDocumentMoniker": "src\\data_collection\\agriculture_analysis.py",
