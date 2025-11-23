@@ -26,7 +26,6 @@
     <Compile Include="src\data_collection\agriculture_analysis.py" />
     <Compile Include="src\data_collection\database_setup.py" />
     <Compile Include="src\data_collection\nasa_api.py" />
-    <Compile Include="src\visualization\charts.py" />
     <Compile Include="src\web_app\app.py" />
     <Compile Include="src\web_app\wsgi.py" />
   </ItemGroup>
@@ -36,14 +35,10 @@
     <Folder Include="data\processed\" />
     <Folder Include="data\raw\" />
     <Folder Include="docs\" />
-    <Folder Include="references\" />
     <Folder Include="src\web_app\" />
-    <Folder Include="tests\" />
     <Folder Include="src\" />
-    <Folder Include="notebooks\" />
     <Folder Include="src\data_collection\" />
     <Folder Include="src\analysis\" />
-    <Folder Include="src\visualization\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env" />

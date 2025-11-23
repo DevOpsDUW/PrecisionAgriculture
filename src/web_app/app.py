@@ -240,7 +240,6 @@ dashboard = EnhancedAgricultureDashboard()
 
 @app.route('/')
 def index():
-    # Use a minimal HTML template to avoid encoding issues
     html_content = """
     <!DOCTYPE html>
     <html>
@@ -257,6 +256,16 @@ def index():
             .field-item { border-bottom: 1px solid #eee; padding: 15px 0; transition: background 0.3s; }
             .field-item:hover { background: #f9f9f9; }
             .loading { color: #666; font-style: italic; }
+            .health-bar { height: 10px; background: #ecf0f1; border-radius: 5px; margin: 5px 0; overflow: hidden; }
+            .health-fill { height: 100%; border-radius: 5px; transition: width 0.5s ease; }
+            .health-healthy { background: #27ae60; }
+            .health-moderate { background: #f39c12; }
+            .health-stressed { background: #e74c3c; }
+            .health-critical { background: #c0392b; }
+            .status-healthy { color: #27ae60; font-weight: bold; }
+            .status-moderate { color: #f39c12; font-weight: bold; }
+            .status-stressed { color: #e74c3c; font-weight: bold; }
+            .status-critical { color: #c0392b; font-weight: bold; }
         </style>
     </head>
     <body>
@@ -304,9 +313,17 @@ def index():
                     data.fields.forEach(field => {
                         const fieldItem = document.createElement('div');
                         fieldItem.className = 'field-item';
+                        
+                        const healthPercentage = field.ndvi_value * 100;
+                        const healthClass = 'health-' + field.status;
+                        const statusClass = 'status-' + field.status;
+                        
                         fieldItem.innerHTML = `
                             <h3>${field.name} (${field.area_hectares} ha)</h3>
-                            <p>NDVI: ${field.ndvi_value} | Health: ${field.status} | Priority: ${field.priority_score}</p>
+                            <div class="health-bar">
+                                <div class="health-fill ${healthClass}" style="width: ${healthPercentage}%"></div>
+                            </div>
+                            <p>NDVI: ${field.ndvi_value} | Health: <span class="${statusClass}">${field.status.toUpperCase()}</span> | Priority: ${field.priority_score}</p>
                             <p>Water: ${field.allocated_water} m3 | Recommendation: ${field.recommendation}</p>
                         `;
                         fieldList.appendChild(fieldItem);
